@@ -107,6 +107,6 @@ int main()
     vector<int>v1= {1, 1, 3, 6 ,9, 9} ;
     vector<int>v2={1, 2 ,3 ,4 ,8 ,8};
     merge3(v1,6,v2,6);
-    for(int i=0;i<6;i++)
+    for(int i=0;i<12;i++)
     cout<<v1[i]<<" ";
 }

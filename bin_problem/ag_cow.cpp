@@ -6,7 +6,7 @@ using namespace std;
 bool isPossible(vector<int> a, int n,int m,int mid){
     int cow=1;
     int last= a[0];
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         if(a[i]-last >= mid){
             cow++;
             if(cow==m){

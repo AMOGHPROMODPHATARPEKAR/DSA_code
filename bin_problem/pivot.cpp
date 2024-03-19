@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int pivot(int a[], int n){
-          int s=0;
+        int s=0;
         int e=n-1;
         while(s<e)
         { 
@@ -18,7 +18,7 @@ int pivot(int a[], int n){
 }
 int main(){
 
-    int a[5]={3,6,8,3,4};
+    int a[5]={4,5,1,2,3};
     int index= pivot(a,5);
     cout<<"the pivot index is "<<index;
 }

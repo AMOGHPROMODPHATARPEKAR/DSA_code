@@ -20,7 +20,7 @@ bool isPossible(vector<int> a, int n,int m,int mid){
     }
     return true;
 }
-
+//n-books m-students
 int allocate(vector<int> a, int n,int m){
     int s=0;
     int sum=0;

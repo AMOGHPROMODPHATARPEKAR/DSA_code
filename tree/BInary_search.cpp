@@ -74,7 +74,7 @@ Node* minBst(Node*root)
 {
     Node*temp = root;
 
-    if(temp->left != NULL)
+    while(temp->left != NULL)
     {
         temp= temp->left;
     }
@@ -84,7 +84,7 @@ Node* maxBst(Node*root)
 {
     Node*temp = root;
 
-    if(temp->right != NULL)
+    while(temp->right != NULL)
     {
         temp= temp->right;
     }

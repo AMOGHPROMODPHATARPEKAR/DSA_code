@@ -75,13 +75,14 @@ int main()
 {
     SpecialStack ns;
    
-    ns.push(20);
-    ns.push(40);
-    ns.push(15);
-    ns.push(25);
-     ns.push(10);
+    ns.push(2);
+    ns.push(0);
+    ns.push(3);
+    ns.push(0);
+    //  ns.push(10);
          cout<<"minimum  :  "<<ns.getMin()<<endl;
     cout<<"popped  : "<<ns.pop()<<endl;
+         cout<<"minimum  :  "<<ns.getMin()<<endl;
     cout<<"popped  : "<<ns.pop()<<endl;
     cout<<"popped : "<<ns.pop()<<endl;
     cout<<"minimum  :  "<<ns.getMin();

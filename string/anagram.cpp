@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 bool isAnagram(string s, string t) {
         if(s.size() != t.size()) return false;
 
@@ -15,11 +15,26 @@ bool isAnagram(string s, string t) {
         }
         return true;
     }
+    bool isAnagram2(string s, string t) {
+        if(s.size() != t.size()) return false;
+
+        map<char,int>mp;
+        for(int i=0;i<s.size();i++)
+        {
+            mp[s[i]]++;
+        }
+        for(int i=0;i<t.size();i++)
+        {
+            int x= --mp[t[i]];
+            if(x<0) return false;
+        }
+        return true;
+    }
 int main()
 {
     string a="youtube";
     string b="outbeyu";
-    if(isAnagram(a,b))
+    if(isAnagram2(a,b))
     {
         cout<<"ANAGRAM";
     }
